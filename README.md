@@ -6,14 +6,17 @@ With a monte-carlo approach, we want to verify if angle-count sampling yields co
 
 ## purpose
 To provide a repeatable, configurable simulation of angle count sampling to verify its correctness and determine its limits,
-possibly even enabling the comparison of differen inventory designs
+possibly even enabling the comparison of different inventory designs.
 
 ## parts
 * Stand generation: can generate different diameter distributions
+  * (maybe) Support for "patchwork" landscapes.
 * bitterlich simulation (function of a point, yields basal area)
 * (maybe) simulation of irregular cross section shapes (ellipsoid or even more arbitrary)
+  * See [On the Geometry of a Cross Section of a Stem](http://pub.epsilon.slu.se/10006/1/medd_statens_skogsforskningsinst_046_11.pdf)
 * (maybe) height model, adding a 3rd dimension
 * (maybe) (temporal) movement and sampling simulation, to optimize for effort
+* (maybe) Simulated measurement errors (overestimating heights or diameters)
 
 ## tools
 * Python based (v3 I guess?)
@@ -23,4 +26,7 @@ possibly even enabling the comparison of differen inventory designs
 ## architecture
 * Gui framework? Maybe Jupyter notebook for fast scaffolding
 * Raster or vector? (vectors seem more sensible, but then are Matplotlib and Numpy still the right tools?)
+  * Bitterlich's method is essentially geometric, vector seems the safer bet
+  * A usable georeferenced geometry package is OGR
 * Metric or USC units or both (Americans and Europeans collaborating...)
+
