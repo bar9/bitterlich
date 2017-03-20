@@ -9,14 +9,16 @@ To provide a repeatable, configurable simulation of angle count sampling to veri
 possibly even enabling the comparison of different inventory designs.
 
 ## parts
-* Stand generation: can generate different diameter distributions
+* Forest Simulation: can generate different diameter distributions
   * (maybe) Support for "patchwork" landscapes.
-* bitterlich simulation (function of a point, yields basal area)
-* (maybe) simulation of irregular cross section shapes (ellipsoid or even more arbitrary)
-  * See [On the Geometry of a Cross Section of a Stem](http://pub.epsilon.slu.se/10006/1/medd_statens_skogsforskningsinst_046_11.pdf)
-* (maybe) height model, adding a 3rd dimension
-* (maybe) (temporal) movement and sampling simulation, to optimize for effort
-* (maybe) Simulated measurement errors (overestimating heights or diameters)
+  * (maybe) simulation of irregular cross section shapes (ellipsoid or even more arbitrary)
+   * See [On the Geometry of a Cross Section of a Stem](http://pub.epsilon.slu.se/10006/1/medd_statens_skogsforskningsinst_046_11.pdf)
+  * (maybe) height model, adding a 3rd dimension
+  
+* Sample Simulation (function of a point)
+  * Simulate various sampling methods (Bitterlich, fixed radius, nested plot, etc).
+  * (maybe) (temporal) movement and sampling simulation, to optimize for effort
+  * (maybe) Simulated measurement errors (overestimating heights or diameters)
 
 ## tools
 * Python based (v3 I guess?)
